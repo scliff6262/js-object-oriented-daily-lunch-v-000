@@ -35,4 +35,8 @@ class Customer {
   deliveries(){
     return store.deliveries.filter(function(d){return d.customerId === this.id}.bind(this))
   }
+
+  meals(){
+    return this.deliveries().map()
+  }
 }
