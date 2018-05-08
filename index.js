@@ -21,3 +21,11 @@ class Neighborhood {
 
  //meals
 }
+
+let customerId = 0
+
+class Customer {
+  constructor(name, neighborhood){
+
+  }
+}
