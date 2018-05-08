@@ -29,5 +29,6 @@ class Customer {
     this.name = name
     this.neighborhoodId = neighborhoodId
     this.id = ++customerIdCounter
+    store.customers.push(this)
   }
 }
