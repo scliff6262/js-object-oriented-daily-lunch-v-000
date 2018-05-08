@@ -22,7 +22,7 @@ class Neighborhood {
  //meals
 }
 
-let customerId = 0
+let customerIdCounter = 0
 
 class Customer {
   constructor(name, neighborhoodId){
