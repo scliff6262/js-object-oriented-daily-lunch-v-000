@@ -18,4 +18,6 @@ class Neighborhood {
   customers(){
     return store.customers.filter(function(c){return c.neighborhoodId === this.id}.bind(this))
   }
+
+ //meals
 }
