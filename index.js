@@ -80,5 +80,6 @@ class Delivery {
     this.neighborhoodId = neighborhoodId
     this.customerId = customerId
     this.id = ++deliveryIdCounter
+    store.deliveries.push(this)
   }
 }
