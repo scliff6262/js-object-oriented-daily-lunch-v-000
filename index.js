@@ -86,4 +86,8 @@ class Delivery {
   meal(){
     return store.meals.find(function(meal){meal.id === this.mealId}.bind(this))
   }
+
+  customer(){
+    return store.customers.find(function(c){c.id === this.customerId}.bind(this))
+  }
 }
