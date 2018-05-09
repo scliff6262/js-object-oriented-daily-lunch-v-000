@@ -92,6 +92,6 @@ class Delivery {
   }
 
   neighborhood(){
-    retirn store.neighborhoods.find(function(n){n.id === this.neighborhoodId}.bind(this))
+    return store.neighborhoods.find(function(n){n.id === this.neighborhoodId}.bind(this))
   }
 }
