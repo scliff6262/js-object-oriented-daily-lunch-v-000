@@ -19,7 +19,9 @@ class Neighborhood {
     return store.customers.filter(function(c){return c.neighborhoodId === this.id}.bind(this))
   }
 
- //meals
+  meals(){
+    return store.meals.filter(function(m){return m.neighborhoodId === this.id})
+  }
 }
 
 let customerIdCounter = 0
