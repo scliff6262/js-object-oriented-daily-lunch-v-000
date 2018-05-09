@@ -88,10 +88,10 @@ class Delivery {
   }
 
   customer(){
-    return store.customers.find(function(c){c.id === this.customerId}.bind(this))
+    return store.customers.find(function(c){return c.id === this.customerId}.bind(this))
   }
 
   neighborhood(){
-    return store.neighborhoods.find(function(n){n.id === this.neighborhoodId}.bind(this))
+    return store.neighborhoods.find(function(n){return n.id === this.neighborhoodId}.bind(this))
   }
 }
