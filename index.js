@@ -21,7 +21,7 @@ class Neighborhood {
 
   meals(){
     const deliveriesInThisNeighborhood = store.deliveries.filter(function(d){return d.neighborhoodId === this.id}.bind(this))
-
+    deliveriesInThisNeighborhood.map(function(d){return d.meal()})
     return Array.from(new Set(allMeals))
   }
 }
