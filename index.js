@@ -46,3 +46,10 @@ class Customer {
     }, 0)
   }
 }
+
+class Meal {
+  constructor(title, price){
+    this.title = title
+    this.price = price
+  }
+}
