@@ -22,7 +22,7 @@ class Neighborhood {
   meals(){
     const deliveriesInThisNeighborhood = store.deliveries.filter(function(d){return d.neighborhoodId === this.id}.bind(this))
     const mealsInThisNeighborhood = deliveriesInThisNeighborhood.map(function(d){return d.meal()})
-    return Array.from(new Set(allMeals))
+    return Array.from(new Set(mealsInThisNeighborhood))
   }
 }
 
