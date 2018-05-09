@@ -68,8 +68,8 @@ class Meal {
   }
 
   static byPrice(){
-    const sorted = store.meals.sort(function(meal1, meal2){meal2.price - meal1.price})
-    debugger:
+    return sorted = store.meals.sort(function(meal1, meal2){meal2.price - meal1.price})
+
   }
 }
 
