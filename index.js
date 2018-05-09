@@ -57,4 +57,8 @@ class Meal {
     this.id = ++mealIdCounter
     store.meals.push(this)
   }
+
+  deliveries(){
+    return store.deliveries.filter(function(d){return d.mealId === this.id}.bind(this))
+  }
 }
