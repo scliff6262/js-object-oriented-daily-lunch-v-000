@@ -71,3 +71,14 @@ class Meal {
     return store.meals.sort(function(meal1, meal2){meal2.price - meal1.price})
   }
 }
+
+let deliveryIdCounter = 0
+
+class Delivery {
+  constructor(mealId, neighborhoodId, customerId){
+    this.mealId = mealId
+    this.neighborhoodId = neighborhoodId
+    this.customerId = customerId
+    this.id = ++deliveryIdCounter
+  }
+}
