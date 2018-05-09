@@ -20,7 +20,7 @@ class Neighborhood {
   }
 
   meals(){
-    return store.meals.filter(function(m){return m.neighborhoodId === this.id}.bind(this))
+    const allMeals = store.meals.filter(function(m){return m.neighborhoodId === this.id}.bind(this))
   }
 }
 
