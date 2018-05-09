@@ -66,4 +66,8 @@ class Meal {
     const allMeals = this.deliveries().map(function(d){return d.customer()})
     return Array.from(new Set(allMeals))
   }
+
+  static byPrice(){
+    
+  }
 }
