@@ -61,4 +61,8 @@ class Meal {
   deliveries(){
     return store.deliveries.filter(function(d){return d.mealId === this.id}.bind(this))
   }
+
+  customers(){
+    const allMeals = this.deliveries().map(function(d){return d.customer()})
+  }
 }
