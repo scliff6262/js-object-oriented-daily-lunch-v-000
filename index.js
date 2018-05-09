@@ -90,4 +90,8 @@ class Delivery {
   customer(){
     return store.customers.find(function(c){c.id === this.customerId}.bind(this))
   }
+
+  neighborhood(){
+    retirn store.neighborhoods.find(function(n){n.id === this.neighborhoodId}.bind(this))
+  }
 }
